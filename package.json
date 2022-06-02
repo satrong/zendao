@@ -1,0 +1,22 @@
+{
+  "name": "zentao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/tough-cookie": "^4.0.2",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11",
+    "got": "11",
+    "tough-cookie": "^4.0.0"
+  }
+}
