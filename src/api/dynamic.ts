@@ -28,7 +28,7 @@ export async function getDynamic(url: string, cb: (data: string[]) => Promise<an
 }
 
 export async function getAllDynamic() {
-  const arr: { title: string; usedTime: number }[] = []
+  const arr: Awaited<ReturnType<typeof getDetail>>[] = []
   await getDynamic('company-dynamic-all--0--next--all-all-all-date_asc.html', async (labelIds: string[]) => {
     for (const labelId of labelIds) {
       arr.push(await getDetail(labelId))

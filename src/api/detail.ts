@@ -18,5 +18,8 @@ export async function getDetail(labelId: string) {
     }
   }
 
-  return { title, usedTime }
+  const text = $('#legendLife tbody > tr').eq(1).children('td').text()
+  const [finisher, finishTime] = text.split(' 于 ')
+
+  return { labelId, title, usedTime, finisher: finisher.trim(), finishTime: new Date(finishTime.trim()).getTime() }
 }
