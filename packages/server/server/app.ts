@@ -6,7 +6,7 @@ import { getStatistics } from './controllers/statistics'
 import './sync'
 
 const server = hapi.server({
-  port: 3000,
+  port: 3100,
   host: 'localhost'
 })
 

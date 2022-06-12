@@ -1,0 +1,27 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^8.6.0",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.3",
+    "element-plus": "^2.2.5",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@unocss/preset-uno": "^0.38.2",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "unocss": "^0.38.2",
+    "unplugin-auto-import": "^0.8.7",
+    "unplugin-vue-components": "^0.19.6",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
